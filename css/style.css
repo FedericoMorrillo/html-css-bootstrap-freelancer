@@ -5,3 +5,26 @@
     box-sizing: border-box;
 }
 /*reset*/
+/*debug*/
+.box{
+    border: var(--debug-border);
+}
+/*debug*/
+/*utils*/
+.fm_p-reset{
+    padding: 0;
+}
+/*utils*/
+:root{
+    --menu:#2c3e50;
+    --sezione:#1abc9c;
+    --debug:yellow;
+    --debug-border:1px solid black;
+}
+header{
+background-color: var(--menu);
+height: 5rem;
+}
+.container-md{
+    height: 100%;
+}
