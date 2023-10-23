@@ -31,6 +31,7 @@
     --sezione-back:#1abc9c;
     --debug:yellow;
     --debug-border:1px solid black;
+    --footer:#3a546d;
 }
 /*variabili*/
 /*header*/
@@ -42,9 +43,19 @@ background-color: var(--menu);
 .sezione{
     background-color: var(--sezione-back);
 }
+/*main*/
+/*footer*/
+.info{
+    background-color: var(--footer);
+}
+.copyright{
+    background-color: #2c3e50;
+}
+/*footer*/
+/*responsive*/
 @media screen and (min-width: 768px){
     .cont-about{
         display: flex;
     }
 }
-/*main*/
+/*responsive*/
