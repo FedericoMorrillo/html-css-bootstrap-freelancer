@@ -5,17 +5,8 @@
     box-sizing: border-box;
 }
 /*reset*/
-/*debug*/
-.box{
-    border: var(--debug-border);
-}
 
-.box-img{
-    height: 200px;
-    width: 200px;
-    border-radius: 70%;
-    background-color: blue;
-}
+/*debug*/
 .col{
     background-color: var(--debug);
 }
@@ -42,7 +33,24 @@ background-color: var(--menu);
 /*main*/
 .sezione{
     background-color: var(--sezione-back);
+    .box-img img{
+        max-width: 12.5rem;
+    }
 }
+/*separatore*/
+.separatore{
+    font-size: 20px;
+}
+.separatore .star{
+    padding: 10px;
+}
+.separatore hr{
+    width: 6.25rem;
+    height: .3125rem;
+    border: 1px solid;
+    align-self: center;
+}
+/*separatore*/
 /*main*/
 /*footer*/
 .info{

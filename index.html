@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--/font awesome-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--bootstrap-->
@@ -9,37 +12,73 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!--/bootstrap-->
     <title>Bootstrap Freelancer</title>
+    <!--css-->
     <link rel="stylesheet" href="css/style.css">
+    <!--/css-->
 </head>
 
 <body>
     <!--menù alto-->
-    <header class="container-fluid fm_p-reset pt-3 pb-3">
-        <div class="container-md d-flex justify-content-between align-items-center">
-            <div class="box p-2">start bootstrap</div>
-            <div class="box p-2">menù</div>
-        </div>
+    <header class="container-fluid fm_p-reset py-3">
+        <!--bootstrap nav-->
+        <nav class="navbar navbar-expand-md text-uppercase" data-bs-theme="dark">
+            <div class="container-md">
+              <a class="navbar-brand" href="#">start bootstrap</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">about</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <!--/bootstrap nav-->
     </header>
     <!--/menù alto-->
     <main>
         <!--jumbo-->
         <section class="sezione container-fluid pt-4 pb-4">
-            <div class="container text-center">
-                <div class="box-img mx-auto"></div>
-                <div class="text-center">testo testo testo testo</div>
+            <div class="container text-center text-white">
+                <div class="box-img mx-auto">
+                    <img src="img/avatar.svg" alt="avatar">
+                </div>
+                <div class="text-center">
+                    <h1 class="text-uppercase">Start bootstrap</h1>
+                    <div class="separatore d-flex justify-content-center">
+                        <hr>
+                        <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        </div>   
+                        <hr>
+                    </div>
+                    <div class="text-center text-uppercase">
+                        graphic artist - web designer - illustrator
+                    </div>
+                </div>
+
             </div>
         </section>
         <!--/jumbo-->
         <section class="pt-5 pb-5">
             <!--griglia per le immagini-->
             <div class="container-md">
-                <div class="row gap-4">
-                    <div class="col col-11 col-md-5 col-lg-3 mx-auto">img</div>
-                    <div class="col col-11 col-md-5 col-lg-3 mx-auto">img</div>
-                    <div class="col col-11 col-md-5 col-lg-3 mx-auto">img</div>
-                    <div class="col col-11 col-md-5 col-lg-3 mx-auto">img</div>
-                    <div class="col col-11 col-md-5 col-lg-3 mx-auto">img</div>
-                    <div class="col col-11 col-md-5 col-lg-3 mx-auto">img</div>
+                <div class="row gap-4 justify-content-center">
+                    <div class="col col-11 col-md-5 col-lg-3 ">img</div>
+                    <div class="col col-11 col-md-5 col-lg-3 ">img</div>
+                    <div class="col col-11 col-md-5 col-lg-3 ">img</div>
+                    <div class="col col-11 col-md-5 col-lg-3 ">img</div>
+                    <div class="col col-11 col-md-5 col-lg-3 ">img</div>
+                    <div class="col col-11 col-md-5 col-lg-3 ">img</div>
                 </div>
             </div>
             <!--/griglia per le immagini-->
@@ -81,6 +120,7 @@
             </div>
         </section>   
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
 </html>
